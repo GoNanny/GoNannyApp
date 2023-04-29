@@ -6,6 +6,11 @@ function setFormMessage(formElement, type, message){
     messageElement.classList.add(`form__message--${type}`);
 }
 
+function setInputError(inputElement, message){
+    inputElement.classList.add("form__input--error")
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = message
+}
+
 document.addEventListener("DOMContentLoaded", () =>{
     const loginForm = document.querySelector("#login");
     const createAccountForm = document.querySelector('#createAccount');
@@ -27,5 +32,13 @@ document.addEventListener("DOMContentLoaded", () =>{
         //perform the fetch login
 
         setFormMessage(loginForm, "error", "Invalid username/password combination")
+    })
+
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+        inputElement.addEventListener("blur", e => {
+            if(e.target.id === "signupUserName" && e.target.value.length > 0 && e.target.value.length < 10) {
+                setInputError(inputElement, "Username must be at least 10 characters in length")
+            }
+        })
     })
 });
