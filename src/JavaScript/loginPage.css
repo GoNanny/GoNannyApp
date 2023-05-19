@@ -19,18 +19,18 @@ body{
 .container{
     text-align: center;
     width: 400px;
-    max-width: 400px;
-    margin: 15rem;
+    max-width: 800px;
+    margin: 20rem;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
+    border-radius: 30px;
     background: white;
 }
 
 .container,
 .form__input,
 .form__button{
-    font: 500 1rem 'Montserrat', sans-serif;
+    font: 300 1.5rem 'Montserrat', sans-serif;
 }
 
 .form--hidden{

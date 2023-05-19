@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './navBar.css'
 
@@ -13,6 +13,18 @@ const TopNavigation = () => {
     const resetActive = () => {
         setIsActive(false);
     };
+
+    useEffect(() => {
+        const handleMouseLeave = () => {
+            setIsActive(false);
+        };
+
+        document.addEventListener('mouseleave', handleMouseLeave);
+
+        return () => {
+            document.removeEventListener('mouseleave', handleMouseLeave);
+        };
+    }, []);
 
     const isActivePage = (path) => {
         return location.pathname === path && isActive;
