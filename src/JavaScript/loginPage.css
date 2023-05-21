@@ -12,7 +12,7 @@ body{
     alight-items: center;
     justify-content: center;
     font-size: 18px;
-    background: #5B8BDF;
+    background: linear-gradient(#3e66a6, #c1d7fb);
     background-size: cover;
 }
 
