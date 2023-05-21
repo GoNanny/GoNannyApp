@@ -33,11 +33,10 @@ const TopNavigation = () => {
     return (
         <div
             className="topnav"
-            //style={{ backgroundColor: isActive ? '5B8BDF' : '5B8BDF' }}
         >
             <Link
                 to="/Sikumonet"
-                className={isActivePage('/Sikumonet') ? 'active' : ''}
+                id="appName"
                 onMouseEnter={handleClick}
                 onMouseLeave={resetActive}
             >
@@ -45,7 +44,7 @@ const TopNavigation = () => {
             </Link>
             <Link
                 to="/news"
-                className={isActivePage('/news') ? 'active' : ''}
+                className="navItem"
                 onMouseEnter={handleClick}
                 onMouseLeave={resetActive}
             >
@@ -53,7 +52,7 @@ const TopNavigation = () => {
             </Link>
             <Link
                 to="/contact"
-                className={isActivePage('/contact') ? 'active' : ''}
+                className="navItem"
                 onMouseEnter={handleClick}
                 onMouseLeave={resetActive}
             >
@@ -61,7 +60,7 @@ const TopNavigation = () => {
             </Link>
             <Link
                 to="/login"
-                className={isActivePage('/login') ? 'active' : ''}
+                className="navItem"
                 onMouseEnter={handleClick}
                 onMouseLeave={resetActive}
             >
