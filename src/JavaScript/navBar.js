@@ -31,9 +31,7 @@ const TopNavigation = () => {
     };
 
     return (
-        <div
-            className="topnav"
-        >
+        <div className="topnav">
             <Link
                 to="/Sikumonet"
                 id="appName"
