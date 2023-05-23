@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../CSS/loginPage.css'
 
 const LoginPage = () => {
     const [isLoginFormVisible, setIsLoginFormVisible] = useState(true);

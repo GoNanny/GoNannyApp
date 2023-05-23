@@ -1,0 +1,12 @@
+select {
+    position: absolute;
+    width: 426px;
+    height: 40px;
+    font-family: inherit;
+    font-size: 20px;
+    
+}
+
+.custom-dropdown {
+    height: 0px;
+}

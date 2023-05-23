@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './navBar.css'
+import '../CSS/navBar.css'
 
 const TopNavigation = () => {
     const [isActive, setIsActive] = useState(false);
@@ -36,25 +36,25 @@ const TopNavigation = () => {
                 to="/Sikumonet"
                 id="appName"
                 onMouseEnter={handleClick}
-                onMouseLeave={resetActive}
+                sonMouseLeave={resetActive}
             >
                 Sikumonet
             </Link>
             <Link
-                to="/news"
+                to="/credits"
                 className="navItem"
                 onMouseEnter={handleClick}
                 onMouseLeave={resetActive}
             >
-                News
+                Credits
             </Link>
             <Link
-                to="/contact"
+                to="/aboutus"
                 className="navItem"
                 onMouseEnter={handleClick}
                 onMouseLeave={resetActive}
             >
-                Contact
+                About us
             </Link>
             <Link
                 to="/login"

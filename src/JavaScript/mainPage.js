@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../CSS/mainPage.css'
+import './mainPageSearch'
+import MainPageSearch from './mainPageSearch';
 
 function MainPage() {
+
     return (
         <div>
-            <h1>Welcome to the Main Page!</h1>
-            {/* Add your main page content here */}
+            <h1>Looking for <br></br>a way <br></br>to exell?</h1>
+            <MainPageSearch/>
         </div>
     );
 }

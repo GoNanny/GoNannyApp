@@ -2,8 +2,8 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import LoginPage from './JavaScript/loginPage';
 import TopNavigation from './JavaScript/navBar';
-import './JavaScript/navBar.css'
-import './JavaScript/loginPage.css'
+import './CSS/navBar.css'
+import './CSS/loginPage.css'
 import './JavaScript/mainPage'
 import MainPage from "./JavaScript/mainPage";
 
