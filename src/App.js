@@ -6,6 +6,7 @@ import './CSS/navBar.css'
 import './CSS/loginPage.css'
 import './JavaScript/mainPage'
 import MainPage from "./JavaScript/mainPage";
+import MainPageSearch from './JavaScript/mainPageSearch';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <TopNavigation />
                 <Routes>
                     <Route path="/Login" element={<LoginPage />} />
+                    <Route path="/Search" element={<MainPageSearch/>} />
                     <Route path="/Sikumonet" element={<MainPage />} />
                     {/* Define other routes */}
                 </Routes>

@@ -14,17 +14,20 @@ body{
     background-size: cover;
 }
 
-.container{
+.container {
     text-align: center;
     width: 400px;
     max-width: 800px;
-    margin: 20rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     background: white;
-}
-
+  }
 .container,
 .form__input,
 .form__button{

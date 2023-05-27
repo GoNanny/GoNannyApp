@@ -1,5 +1,4 @@
 import React from 'react';
-//import '../CSS/dropDownAcademy.css'
 
 class DropdownMajor extends React.Component {
   constructor(props) {

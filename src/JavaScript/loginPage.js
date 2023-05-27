@@ -22,7 +22,7 @@ const LoginPage = () => {
                 <>
                     {isLoginFormVisible ? (
                         <form className="form__hidden" id="login">
-                            <h1 className="form__title">Login</h1>
+                            <h1 className="form__title"></h1>
                             <div className="form__message form__message--error"></div>
                             <div className="form__input-group">
                                 <input
