@@ -7,6 +7,7 @@ function MainPageSearch() {
 
     return (
         <div class="mainSearch">
+            <h1>Looking for a way <br></br>to exell?</h1>
             <h2 className="study">Where do yo study?</h2>
             <div className="dropdown_academy">
                 <DropdownAcademy />

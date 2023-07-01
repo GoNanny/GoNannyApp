@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../CSS/navBar.css'
+import logo from '../Pictures/logo.png'
+
 
 const TopNavigation = () => {
     const [isActive, setIsActive] = useState(false);
@@ -32,14 +34,25 @@ const TopNavigation = () => {
 
     return (
         <div className="topnav">
+            
             <Link
                 to="/Sikumonet"
                 id="appName"
                 onMouseEnter={handleClick}
                 sonMouseLeave={resetActive}
             >
-                Sikumonet
+                <img src={logo} alt="Sikumonet Logo" />
             </Link>
+
+            <Link
+                to="/search"
+                className="navItem"
+                onMouseEnter={handleClick}
+                onMouseLeave={resetActive}
+            >
+                Search
+            </Link>
+
             <Link
                 to="/credits"
                 className="navItem"
